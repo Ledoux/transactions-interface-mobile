@@ -1,0 +1,46 @@
+{
+  "ava": {
+    "babel": {
+      "presets": [
+        "latest",
+        "react"
+      ]
+    },
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ]
+  },
+  "author": "Erwan Ledoux",
+  "dependencies": {
+    "classnames": "2.2.5",
+    "prop-types": "^15.5.4",
+    "react": "^16.0.0",
+    "react-native": "^0.48.4",
+    "react-redux": "^5.0.5",
+    "react-router-redux": "next",
+    "redux": "^3.6.0",
+    "transactions-interface-state": "latest"
+  },
+  "description": "In the framework of transactions, this is a frontend plugin that gives you very smart uis for auth",
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.22.0",
+    "nodemon": "^1.11.0",
+    "standard": "^7.0.1"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "transactions-interface-mobile",
+  "scripts": {
+    "compile": "npm run compile-js",
+    "compile-js": "babel --presets latest,react -d lib/ src/",
+    "test": "ava -v",
+    "dev": "npm run dev",
+    "dev-watch-js": "nodemon --watch src --exec \"npm run compile\"",
+    "dev-watch": "npm run dev-watch-js"
+  },
+  "version": "0.0.1"
+}

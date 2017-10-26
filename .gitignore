@@ -1,0 +1,7 @@
+*.pyc
+.DS_store
+.git
+.sass-cache/
+bower_components/
+node_modules/
+yarn-error.log
